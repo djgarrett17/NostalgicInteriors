@@ -1,0 +1,256 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  
+  
+}
+
+
+.titlefirst{
+    grid-area: gridzer;
+    font-size: 25px;
+    justify-self: center;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-areas:
+    "a a a"
+    "a a a"
+    "b b b";
+ */
+}
+
+.abouttitle{
+    color: rgb(255, 89, 117);
+
+}
+
+#aboutid{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 20px;
+    color: rgb(255, 89, 117);
+    text-shadow: 0 0 20px;
+    transform: translate(0%,0%);
+    text-shadow:
+		-1px -1px 0 rgb(255, 89, 117),
+		1px -1px 0 rgb(255, 89, 117),
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+    padding: 0 0 0 0px;
+    
+
+ 
+}
+.abouttitle:after{
+    content: attr(data-text);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    color: rgb(255, 89, 117);
+    filter: blur(15px);
+
+
+
+}
+.abouttitle:before{
+    content: attr(data-text);
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    color: rgb(255, 89, 117);
+    opacity: .5;
+    filter: blur(15px);
+}
+
+.aboutbody{
+    grid-area: gridtre;
+    border: ridge black;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas:
+    "one"
+    "two"
+    "three"; */
+
+    color: rgb(255, 255, 255);
+}
+
+.abouttext{
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.navgrid1{
+    grid-area: gridzer;
+    justify-self: end;
+    padding: 20px;
+    font-size: 25px;
+    word-spacing: 15px;
+    text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+    letter-spacing: 2px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.checkout{
+    grid-area: gridsix;
+    justify-self: center;
+    color: whitesmoke;
+    font-size: 30px;
+    padding: 30px 0 0 120px;
+}
+
+.instabutton{
+    grid-area: gridsix;
+    justify-self: center;
+    align-self: center;
+    padding: 0 0 0 120px;
+}
+
+.momimage{
+    grid-area: gridten;
+    margin-left: 150px;
+    /* align-items: right; */
+}
+
+.emailtext{
+    grid-area: gridele;
+    justify-self: center;
+
+}
+
+#emailid{
+    color: whitesmoke;
+    font-size: 30px;
+    text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+    
+}
+
+#phoneid{
+    color: whitesmoke;
+    font-size: 30px;
+    text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+    
+}
+
+#home1{
+    color: whitesmoke;
+    text-decoration: none;
+
+
+}
+
+#about1{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#gallery1{
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+#insta1{
+    left: 0;
+    width: 70px;
+    height: 70px;
+}
+
+#linehere{
+    border: 2px solid black;
+    width: 250px;
+    height: 300px;
+    box-shadow: 0px 0px 50px 15px;
+}
+
+.aboutcontainer{
+    background-image: url(./backgroundabout.png);
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "gridzer gridzer gridzer gridzer gridzer"
+    "gridzer gridzer gridzer gridzer gridzer"
+    "gridten gridten gridele gridele gridele"
+    "gridten gridten gridtre gridtre gridtre"
+    "gridsix gridsix gridtre gridtre gridtre"
+    "gridsix gridsix gridnin gridnin gridnin"
+   
+}
+
+/* @media only screen and (max-width: 1024px){
+    .aboutcontainer{
+        background-image: url(./images/aboutpage.jpg);
+        background-size: 100% 100%;
+        min-width: 100%;
+        min-height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+    
+       "title"
+       "about"
+       "picture";
+       
+    }
+    .titlefirst{
+        grid-area: title;
+    }
+    .aboutbody{
+        grid-area: about;
+    }
+    .momimage{
+        grid-area: picture;
+    }
+}
+@media only screen and (max-width: 760px){
+    .aboutcontainer{
+        background-image: url(./images/aboutpage.jpg);
+        background-size: 100% 100%;
+        min-width: 100%;
+        min-height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+    
+       "title picture"
+       "about about";
+       
+    }
+    .titlefirst{
+        grid-area: title;
+    }
+    .aboutbody{
+        grid-area: about;
+    }
+    .momimage{
+        grid-area: picture;
+    }
+} */

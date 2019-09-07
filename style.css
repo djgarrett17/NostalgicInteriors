@@ -1,0 +1,190 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  
+  
+}
+.pagecontainer{
+    /* background-image: url(./images/nostalgicfrontpage.png); */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./nostalgicinteriorsfrontpage.jpg);
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    
+    /* filter: saturate(1.3);
+    filter: brightness(1.9); */
+    filter: contrast(1.9);
+    /* min-height: 100%;
+    min-width: 100%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+
+    "gridone gridone gridfiv gridtwo gridtwo"
+    "gridone gridone gridfiv gridtwo gridtwo"
+    "gridsev gridsix gridsix gridsix grideit"
+    "gridsev gridsix gridsix gridsix grideit"
+    "gridsev gridtre gridtre gridtre gridfoh";
+
+      
+}
+
+.title{
+    color: whitesmoke;
+    grid-area: gridone;
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    /* grid-area: gridone;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "a a a a"
+    "b b c c"
+    "b b d e";
+     */
+}
+/* .head{ */
+    /* font-family: 'Aguafina Script', cursive;
+    letter-spacing: 5px;
+    font-size: 40px;
+    color: whitesmoke; */
+/* } */
+
+.navgrid{
+    grid-area: gridtwo;
+    justify-self: end;
+    padding: 20px;
+    font-size: 25px;
+    word-spacing: 15px;
+    text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+    letter-spacing: 2px;
+    
+
+    
+    /* grid-area: gridfoh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+
+    "j x y z"
+    "k k k k"
+    "o l m m"
+    "n n n n"; */
+  
+}
+.navbutton{
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+  
+    
+    /* letter-spacing: 3px;
+    margin-top: 15px;
+    margin-left: 10%; */
+}
+
+.createspaces{
+    grid-area: k;
+    justify-self: center;
+    color: whitesmoke;
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 2px;
+    /* padding: 20px 0 0 0; */
+    text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.withastory{
+    grid-area: o;
+    justify-self: center;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.creategrid{
+    display: grid;
+    grid-area: gridsix;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto auto;
+    grid-template-areas:
+    "k k k k k k k k k k k"
+    "o o o o o o o o o o o"
+    "n n n n n n n n n n n"
+    "n n n n n n n n n n n";
+}
+
+#home{
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+#about{
+    color: whitesmoke;
+    font-size: 25px;
+    /* grid-area: x;
+    color: white;
+    border: none;
+    background: none; */
+    
+}
+#gallery{
+    color: whitesmoke;
+    font-size: 25px;
+    /* grid-area: y;
+    color: white;
+    border: none;
+    background: none; */
+
+}
+
+#nost{
+    left: 0;
+    /* grid-area: c;
+    margin-left: 30px;
+    margin-top: 30px; */
+   
+}
+
+#cspaces{
+    font-size: 60px;
+    
+}
+
+#withstory{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 100;
+    
+    
+}
+
+
+  /* "1 2 3 d e f g h i j"
+        "k l m n o p q r s t"
+        "u v w x y z aa bb cc dd"
+        "ee ff gg hh ii jj kk ll mm nn"
+        "oo pp qq rr ss tt uu vv ww xx"
+        "yy zz ab bc cb db eb fb gb hb"
+        "jb kb lb mb nb ob pb qb rb sb"
+        "tb ub vb wb xb yb zb ac bc cd"
+        "dc ec fc gc hc ic jc kc lc mc"
+        "nc oc pc qc rc sc tc uc vc wc";  */
+    
+       
